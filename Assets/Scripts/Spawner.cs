@@ -49,17 +49,9 @@ public class Spawner : MonoBehaviour
                 if (_prefabs[i].name == name)
                 {
                     GameObject.Instantiate(_prefabs[i]);
-                    Debug.Log($"Spawned: {_prefabs[i].name}");
-                    return;
+                    break;
                 }
             }
-
-            Debug.Log($"Prefab with name '{name}' not found.");
         }
-        else
-        {
-            Debug.Log("Prefab is not loaded yet.");
-        }
-
     }
 }
