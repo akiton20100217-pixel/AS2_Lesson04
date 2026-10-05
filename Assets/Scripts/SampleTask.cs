@@ -28,7 +28,6 @@ public class SampleTask : MonoBehaviour
         Instantiate(Prefab);
         //================================================================-
 
-
         //ã‚Ì•¡”ƒo[ƒWƒ‡ƒ“
         //=================================================================
         var handles = Addressables.LoadAssetsAsync<GameObject>("Prefabs");
